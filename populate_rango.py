@@ -9,7 +9,7 @@ from rango.models import Category, Page
 def populate():
     python_pages = [
         {'title': 'Official Python Tutorial',
-         'url':'http://docs.python.org/3/tutorial',
+         'url':'http://docs.python.org/3/tutorial/',
          'views': 25},
         {'title': 'How to Think like a Computer Scientist',
          'url': 'http://www.greenteapress.com/thinkpython/',
@@ -40,7 +40,7 @@ def populate():
          'views':1}
     ]
 
-    cats = { 'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
+    cats = {'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
             'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
             'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 16}
     }

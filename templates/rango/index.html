@@ -1,7 +1,7 @@
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
  
-{% block title_block%}
+{% block title_block %}
     Homepage
 {% endblock %}
  
@@ -17,7 +17,7 @@
             <ul>
                 {% for category in categories %}
                     <li>
-                        <a href="/rango/category/{{ category.slug}}/">{{category.name}}</a>
+                        <a href="{% url 'rango:show_category' category.slug %}">{{category.name}}</a>
                     </li>
                 {% endfor %}
             </ul>
